@@ -1,7 +1,7 @@
 
 import './App.css'
 import { AllRoutes } from './Routes/AllRoutes'
-import { Navbar } from './components/navbar';
+import { Navbar } from './components/Navbar';
 
 
 
