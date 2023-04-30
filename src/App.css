@@ -1,0 +1,237 @@
+#root {
+    background-color: #f1f8ff;
+ 
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-between;
+    padding: 14px 0px 0px 0px;
+    margin: 0px;
+    border-bottom: 3px solid #60e5e5;
+    box-shadow: 0px 3px 8px 1px #0a5252;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    overflow: hidden;
+
+}
+.navbar :hover {
+    color: #60e5e5;
+    transform: translateY(-5px);
+    text-shadow: 1px 1px #02dada;
+}
+
+.AllBooksContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+
+}
+.bookCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 250px;
+    border: 3.5px solid gray;
+    margin: 10px;
+    align-content: space-evenly;
+    font-family: Arial, sans-serif;
+    
+}
+.cardHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 28px;
+    width: 230px;
+    border-bottom: 2px solid #0a0a0a;
+    padding-bottom: 5px;
+    font-size: 26px;
+    cursor: default;
+
+}
+.greenCircle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: green;
+    margin-top: 7px;
+}
+.greenCircle:hover::before {
+    content: attr(data-tooltip);
+    top: 30px; 
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+.redCircle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 7px;
+}
+.redCircle:hover::before {
+    content: attr(data-tooltip);
+    top: 30px; 
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+
+.imageDiv img{
+    height: 200px;
+    width: 125px;
+    border:2px solid black;
+    
+}
+.bookDetails{
+    display: inline-block;
+}
+
+.btnContainer {
+        width: initial;
+    }
+
+
+.ReadBtn {
+    background-color: #00ffff;
+    border: 3px solid #000000;
+    padding: 6px;
+    border-radius: 14px;
+    font-size: medium;
+    font-weight: 400;
+    font-family: serif;
+    cursor:pointer;
+
+
+}
+.ReadBtn:hover{
+    transform: translateY(-2px);
+    font-weight: 550;
+}
+button:disabled{
+    color:#0a0a0a;
+  
+    opacity: 0.6;
+    cursor: not-allowed;
+    
+}
+button:disabled:hover{
+    transform: translateY(2px);
+  
+}
+.favCounter{
+    position: relative;
+    top: -41px;
+    left: 92px;
+    background-color: red;
+    border-radius: 54%;
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    
+}
+.readCounter{
+    top: -42px;
+    left: 40px;
+    position: relative;
+    background-color: red;
+    border-radius: 54%;
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.favBtn:hover::before {
+    content: attr(data-tooltip);
+    top: 30px; 
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .favBtn:hover::before {
+    content: attr(data-tooltip);
+    top: 30px; 
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+.favLink:hover::before {
+    content: attr(data-tooltip);
+    top: 30px; 
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .profileContainer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 250px;
+    margin: auto;
+    border: 2px solid tomato;
+    background-color: lightblue;
+
+
+  }
+  .profileContainer img{
+    height: 200px;
+    width: 250px;
+    border-bottom: 2px solid black;
+    
+  }
+  .favSectionMessage{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .readSectionMessage{
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+  
+  
+
+
+
+
